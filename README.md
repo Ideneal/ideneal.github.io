@@ -1,1 +1,0 @@
-ideneal.github.io
