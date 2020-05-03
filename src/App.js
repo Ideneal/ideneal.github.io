@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Switch, Route} from "react-router-dom";
+import {HashRouter, Switch, Route} from "react-router-dom";
 
 import {createMuiTheme, ThemeProvider, makeStyles} from "@material-ui/core";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -38,7 +38,7 @@ const App = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            <BrowserRouter>
+            <HashRouter>
                 <div className={classes.root}>
                     <CssBaseline/>
                     <NavBar routes={routes}/>
@@ -56,7 +56,7 @@ const App = () => {
                     </Container>
                     <Footer/>
                 </div>
-            </BrowserRouter>
+            </HashRouter>
         </ThemeProvider>
     );
 };
