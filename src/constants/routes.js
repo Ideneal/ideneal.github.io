@@ -7,9 +7,4 @@ export default [
         path: '/posts',
         render: <Posts/>,
     },
-    {
-        label: 'About',
-        path: '/about',
-        render: null
-    },
 ];
